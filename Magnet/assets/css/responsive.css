@@ -1,0 +1,158 @@
+@media all and (min-width:768px){
+    .navigation{
+        display: block;
+        width: 70%;
+        position: static;
+        background-color: transparent;
+    }
+
+    .logo{
+        width: 15%;
+    }
+
+    .nav-menu li{
+        border: none;
+        margin-left: 30px;
+    }
+
+    .mob-menu{
+        display: none;
+    }
+
+    .nav-menu{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .nav-menu li a{
+        text-transform: capitalize;
+        position: relative;
+    }
+
+    .nav-menu li a:after{
+        width: 0%;
+        height: 2px;
+        transition: 0.5s all;
+        content: "";
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+    }
+
+    .nav-menu li a:hover:after{
+        width: 100%;
+        background-color: white;
+    }
+
+
+
+    .header{
+        background: transparent;
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        right: 0;
+        padding: 0;
+    }
+
+    .header .container{
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgba(0,0,0,0.5);
+        padding: 20px;
+    }
+
+    .banner{
+        background-image: url(/assets/images/3.png);
+        background-size: cover;
+        text-align: center;
+        padding-top: 250px;
+        background-size: cover;
+    }
+
+    .banner .container{
+        padding: 0 100px;
+    }
+
+    .banner .container p{
+        font-size: 16px;
+    }
+
+    .banner .container button{
+        position: static;
+        margin: 20px 0;
+        background-color: rgb(151, 78, 17);
+    }
+
+    .features .container p{
+        font-size: 15px;
+    }
+
+    .image-wrapper{
+        width: calc(25% - 13px);
+        margin: 13px;
+    }
+
+    .image-icon{
+        margin: 30px 0;
+    }
+
+    .features .container button{
+        position: static;
+    }
+
+    .form-block{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .form-group{
+        padding: 40px 0;
+    }
+
+    .form-group ul{
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+    }
+
+     .form-group form input{
+        margin:13px;
+         width: calc(50% - 13px);
+     }
+
+     .form-group form input:nth-child(odd){
+         margin-left: 0;
+     }
+
+     .form-group form input:nth-child(even){
+        margin-right: 0;
+    }
+
+    .brand .container .brand-img{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .brand .container .brand-img img{
+        width: 20%;
+        padding: 20px;
+    }
+
+    .form-group .container button{
+        position: static;
+        margin: 20px 0;
+    }
+
+    .form-group .container p{
+        font-size: 16px;
+    }
+
+    .form-group .container ul{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+}
